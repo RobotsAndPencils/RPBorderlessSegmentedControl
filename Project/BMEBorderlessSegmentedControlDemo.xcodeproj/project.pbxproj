@@ -19,8 +19,6 @@
 		CAB5B36E18A9CCB000F2BE1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB5B34D18A9CCB000F2BE1F /* Cocoa.framework */; };
 		CAB5B37618A9CCB000F2BE1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAB5B37418A9CCB000F2BE1F /* InfoPlist.strings */; };
 		CAB5B37818A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B37718A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.m */; };
-		CAB5B38618A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B38518A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.m */; };
-		CAB5B39118A9D4E200F2BE1F /* NSImage+DrawAsTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B39018A9D4E200F2BE1F /* NSImage+DrawAsTemplate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +53,6 @@
 		CAB5B37318A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BMEBorderlessSegmentedControlDemoTests-Info.plist"; sourceTree = "<group>"; };
 		CAB5B37518A9CCB000F2BE1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CAB5B37718A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMEBorderlessSegmentedControlDemoTests.m; sourceTree = "<group>"; };
-		CAB5B38418A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMEBorderlessSegmentedControl.h; sourceTree = "<group>"; };
-		CAB5B38518A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMEBorderlessSegmentedControl.m; sourceTree = "<group>"; };
-		CAB5B38F18A9D4E200F2BE1F /* NSImage+DrawAsTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+DrawAsTemplate.h"; path = "../../Categories/NSImage+DrawAsTemplate.h"; sourceTree = "<group>"; };
-		CAB5B39018A9D4E200F2BE1F /* NSImage+DrawAsTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+DrawAsTemplate.m"; path = "../../Categories/NSImage+DrawAsTemplate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +121,6 @@
 		CAB5B35318A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5B38E18A9D4B000F2BE1F /* Categories */,
-				CAB5B39818A9FA3E00F2BE1F /* Classes */,
 				CAB5B35F18A9CCB000F2BE1F /* BMEAppDelegate.h */,
 				CAB5B36018A9CCB000F2BE1F /* BMEAppDelegate.m */,
 				CAB5B36218A9CCB000F2BE1F /* MainMenu.xib */,
@@ -166,24 +158,6 @@
 				CAB5B37418A9CCB000F2BE1F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CAB5B38E18A9D4B000F2BE1F /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				CAB5B38F18A9D4E200F2BE1F /* NSImage+DrawAsTemplate.h */,
-				CAB5B39018A9D4E200F2BE1F /* NSImage+DrawAsTemplate.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
-		CAB5B39818A9FA3E00F2BE1F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CAB5B38418A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.h */,
-				CAB5B38518A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.m */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,10 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB5B39118A9D4E200F2BE1F /* NSImage+DrawAsTemplate.m in Sources */,
 				CAB5B35A18A9CCB000F2BE1F /* main.m in Sources */,
 				CAB5B36118A9CCB000F2BE1F /* BMEAppDelegate.m in Sources */,
-				CAB5B38618A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

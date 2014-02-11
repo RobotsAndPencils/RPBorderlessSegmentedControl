@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../BMEBorderlessSegmentedControl.podspec
 
 SPEC CHECKSUMS:
-  BMEBorderlessSegmentedControl: 1e224344111a044a88abd28b12efd8a83396789c
+  BMEBorderlessSegmentedControl: 37e0b410ae5deb0992f1bc8888cbf14d859d5aa6
 
 COCOAPODS: 0.29.0

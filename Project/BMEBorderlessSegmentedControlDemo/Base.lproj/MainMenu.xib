@@ -702,7 +702,7 @@
                         <segmentedControl key="view" focusRingType="none" verticalHuggingPriority="750" id="mGz-7f-3U6" customClass="BMEBorderlessSegmentedControl">
                             <rect key="frame" x="0.0" y="14" width="185" height="27"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <segmentedCell key="cell" focusRingType="none" alignment="left" style="rounded" trackingMode="selectAny" id="Hrz-LW-uCu">
+                            <segmentedCell key="cell" focusRingType="none" alignment="left" style="rounded" trackingMode="selectOne" id="Hrz-LW-uCu">
                                 <font key="font" metaFont="system"/>
                                 <segments>
                                     <segment image="alignLeftTemplate" width="58">
