@@ -3,11 +3,17 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/BMEBorderlessSegmentedControl/badge.png)](http://cocoadocs.org/docsets/BMEBorderlessSegmentedControl)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/BMEBorderlessSegmentedControl/badge.png)](http://cocoadocs.org/docsets/BMEBorderlessSegmentedControl)
 
+A replica of Xcode 5's toolbar segmented controls.
+
+![](preview.png)
+
 ## Usage
 
 To run the example project; clone the repo, and run `pod install` from the Project directory first.
 
 ## Requirements
+
+Your segment images should have a 1px margin along the top for proper shadow rendering.
 
 ## Installation
 
