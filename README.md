@@ -11,9 +11,10 @@ A replica of Xcode 5's toolbar segmented controls.
 
 To run the example project; clone the repo, and run `pod install` from the Project directory first.
 
-## Requirements
+## Notes
 
-Your segment images should have a 1px margin along the top for proper shadow rendering.
+- Your segment images should have a 1px margin along the top for proper shadow rendering.
+- Currently only supports "Select One" mode
 
 ## Installation
 
