@@ -57,8 +57,8 @@
 		CAB5B37718A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMEBorderlessSegmentedControlDemoTests.m; sourceTree = "<group>"; };
 		CAB5B38418A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMEBorderlessSegmentedControl.h; sourceTree = "<group>"; };
 		CAB5B38518A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMEBorderlessSegmentedControl.m; sourceTree = "<group>"; };
-		CAB5B38F18A9D4E200F2BE1F /* NSImage+DrawAsTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+DrawAsTemplate.h"; path = "../../Classes/osx/Categories/NSImage+DrawAsTemplate.h"; sourceTree = "<group>"; };
-		CAB5B39018A9D4E200F2BE1F /* NSImage+DrawAsTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+DrawAsTemplate.m"; path = "../../Classes/osx/Categories/NSImage+DrawAsTemplate.m"; sourceTree = "<group>"; };
+		CAB5B38F18A9D4E200F2BE1F /* NSImage+DrawAsTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+DrawAsTemplate.h"; path = "../../Categories/NSImage+DrawAsTemplate.h"; sourceTree = "<group>"; };
+		CAB5B39018A9D4E200F2BE1F /* NSImage+DrawAsTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+DrawAsTemplate.m"; path = "../../Categories/NSImage+DrawAsTemplate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB5B38E18A9D4B000F2BE1F /* Categories */,
-				CAB5B38418A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.h */,
-				CAB5B38518A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.m */,
+				CAB5B39818A9FA3E00F2BE1F /* Classes */,
 				CAB5B35F18A9CCB000F2BE1F /* BMEAppDelegate.h */,
 				CAB5B36018A9CCB000F2BE1F /* BMEAppDelegate.m */,
 				CAB5B36218A9CCB000F2BE1F /* MainMenu.xib */,
@@ -176,6 +175,15 @@
 				CAB5B39018A9D4E200F2BE1F /* NSImage+DrawAsTemplate.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		CAB5B39818A9FA3E00F2BE1F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5B38418A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.h */,
+				CAB5B38518A9CEC200F2BE1F /* BMEBorderlessSegmentedControl.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
