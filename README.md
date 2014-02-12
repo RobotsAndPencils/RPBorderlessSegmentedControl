@@ -14,7 +14,6 @@ To run the example project; clone the repo, and run `pod install` from the Proje
 ## Notes
 
 - Your segment images should have a 1px margin along the top for proper shadow rendering.
-- Currently only supports "Select One" mode
 
 ## Installation
 

@@ -10,8 +10,7 @@
 
 @implementation NSImage (DrawAsTemplate)
 
-- (void)drawAsTemplateInRect:(NSRect)rect highlighted:(BOOL)highlighted
-{
+- (void)drawAsTemplateInRect:(NSRect)rect highlighted:(BOOL)highlighted {
     NSSize size = rect.size;
     CGFloat dropShadowOffsetY = size.width <= 64.0 ? -1.0 : -2.0;
     CGFloat innerShadowBlurRadius = size.width <= 32.0 ? 1.0 : 4.0;

@@ -7,9 +7,29 @@
 //
 
 #import "BMEBorderlessSegmentedControl.h"
-#import "NSImage+DrawAsTemplate.h"
+#import "BMEBorderlessSegmentedCell.h"
 
 @implementation BMEBorderlessSegmentedControl
+
++ (Class)cellClass {
+    return [BMEBorderlessSegmentedCell class];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+	if (![aDecoder isKindOfClass:[NSKeyedUnarchiver class]]) {
+		return [super initWithCoder:aDecoder];
+    }
+
+	NSKeyedUnarchiver *unarchiver = (NSKeyedUnarchiver *)aDecoder;
+	Class oldClass = [[self superclass] cellClass];
+	Class newClass = [[self class] cellClass];
+
+	[unarchiver setClass:newClass forClassName:NSStringFromClass(oldClass)];
+	self = [super initWithCoder:aDecoder];
+	[unarchiver setClass:oldClass forClassName:NSStringFromClass(oldClass)];
+
+	return self;
+}
 
 - (void)drawRect:(NSRect)rect {
     CGFloat segmentWidth = rect.size.width / [self segmentCount];
@@ -17,34 +37,9 @@
     NSRect segmentRect = NSMakeRect(0, 0, segmentWidth, segmentHeight);
 
     for (NSInteger segmentIndex = 0; segmentIndex < [self segmentCount]; segmentIndex += 1) {
-        [self drawSegmentAtIndex:segmentIndex inFrame:segmentRect selected:(segmentIndex == self.selectedSegment)];
+        [(NSSegmentedCell *)self.cell drawSegment:segmentIndex inFrame:segmentRect withView:self];
         segmentRect.origin.x += segmentWidth;
     }
-}
-
-- (void)drawSegmentAtIndex:(NSInteger)segmentIndex inFrame:(NSRect)frame selected:(BOOL)selected {
-    CGFloat alpha;
-
-    if ([[self window] isKeyWindow]) {
-        alpha = 0.5;
-    }
-    else {
-        alpha = 0.2;
-    }
-
-    NSImage *segmentImage = [self imageForSegment:segmentIndex];
-    if (segmentImage) {
-        [[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
-        [self drawCenteredImage:segmentImage inFrame:frame alpha:alpha selected:selected];
-    }
-}
-
-- (void)drawCenteredImage:(NSImage*)image inFrame:(NSRect)frame alpha:(CGFloat)alpha selected:(BOOL)selected {
-    CGSize imageSize = [image size];
-    CGFloat x = frame.origin.x + (frame.size.width - imageSize.width) / 2.0;
-    CGFloat y = frame.origin.y + (frame.size.height - imageSize.height) / 2.0;
-    CGRect rect = CGRectIntegral(NSMakeRect(x, y + 1, imageSize.width, imageSize.height));
-    [image drawAsTemplateInRect:rect highlighted:selected];
 }
 
 @end
