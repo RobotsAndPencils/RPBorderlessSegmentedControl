@@ -11,9 +11,8 @@
 @implementation NSImage (DrawAsTemplate)
 
 - (void)drawAsTemplateInRect:(NSRect)rect highlighted:(BOOL)highlighted {
-    NSSize size = rect.size;
-    CGFloat dropShadowOffsetY = size.width <= 64.0 ? -1.0 : -2.0;
-    CGFloat innerShadowBlurRadius = size.width <= 32.0 ? 1.0 : 4.0;
+    CGFloat dropShadowOffsetY = -1.0;
+    CGFloat innerShadowBlurRadius = 1.0;
 
     CGContextRef context = [[NSGraphicsContext currentContext] graphicsPort];
 
@@ -59,8 +58,6 @@
     CGContextDrawImage(context, maskRect, invertedMaskImage);
     CGImageRelease(invertedMaskImage);
     CGContextRelease(maskContext);
-
-    CGContextDrawPath(context, kCGPathStroke);
 
     //restore the graphics state
     CGContextRestoreGState(context);
