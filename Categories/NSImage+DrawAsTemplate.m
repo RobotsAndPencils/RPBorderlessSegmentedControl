@@ -19,6 +19,11 @@
     //save the current graphics state
     CGContextSaveGState(context);
 
+    if ([[NSGraphicsContext currentContext] isFlipped]) {
+        CGContextTranslateCTM(context, 0.0f, CGBitmapContextGetHeight(context));
+        CGContextScaleCTM(context, 1.0f, -1.0f);
+    }
+
     //Create mask image:
     NSRect maskRect = rect;
     CGImageRef maskImage = [self CGImageForProposedRect:&maskRect context:[NSGraphicsContext currentContext] hints:nil];
@@ -46,16 +51,21 @@
 
     //Draw inner shadow with inverted mask:
     CGContextSetShadowWithColor(context, CGSizeMake(0, -1), innerShadowBlurRadius, [[NSColor colorWithCalibratedWhite:0.1 alpha:0.75] CGColor]);
-    CGRect cgRect = CGRectMake( 0, 0, maskRect.size.width, maskRect.size.height );
+
+    CGRect originMaskRect = CGRectMake( 0, 0, maskRect.size.width, maskRect.size.height );
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGContextRef maskContext = CGBitmapContextCreate(NULL, CGImageGetWidth(maskImage), CGImageGetHeight(maskImage), 8, 0, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
     CGColorSpaceRelease(colorSpace);
     CGContextSetBlendMode(maskContext, kCGBlendModeXOR);
-    CGContextDrawImage(maskContext, cgRect, maskImage);
+
+    CGContextDrawImage(maskContext, originMaskRect, maskImage);
+
     CGContextSetRGBFillColor(maskContext, 1.0, 1.0, 1.0, 1.0);
-    CGContextFillRect(maskContext, cgRect);
+    CGContextFillRect(maskContext, originMaskRect);
+
     CGImageRef invertedMaskImage = CGBitmapContextCreateImage(maskContext);
     CGContextDrawImage(context, maskRect, invertedMaskImage);
+
     CGImageRelease(invertedMaskImage);
     CGContextRelease(maskContext);
 

@@ -13,7 +13,7 @@ To run the example project; clone the repo, and run `pod install` from the Proje
 
 ## Notes
 
-- Your segment images should have a 1px margin along the top for proper shadow rendering.
+- Your segment images should be 24px high and have a 1px padding along the top for proper shadow rendering.
 
 ## Installation
 

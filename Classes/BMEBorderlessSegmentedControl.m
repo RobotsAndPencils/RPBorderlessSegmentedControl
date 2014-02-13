@@ -15,6 +15,14 @@
     return [BMEBorderlessSegmentedCell class];
 }
 
+- (id)initWithFrame:(NSRect)frameRect {
+    self = [super initWithFrame:frameRect];
+    if (self) {
+        [self setWantsLayer:YES];
+    }
+    return self;
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	if (![aDecoder isKindOfClass:[NSKeyedUnarchiver class]]) {
 		return [super initWithCoder:aDecoder];
@@ -31,9 +39,14 @@
 	return self;
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self setWantsLayer:YES];
+}
+
 - (void)drawRect:(NSRect)rect {
     CGFloat segmentWidth = rect.size.width / [self segmentCount];
-    CGFloat segmentHeight = 19.0;
+    CGFloat segmentHeight = rect.size.height - 1;
     NSRect segmentRect = NSMakeRect(0, 0, segmentWidth, segmentHeight);
 
     for (NSInteger segmentIndex = 0; segmentIndex < [self segmentCount]; segmentIndex += 1) {
