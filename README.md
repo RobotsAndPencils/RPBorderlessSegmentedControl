@@ -7,6 +7,8 @@ A replica of Xcode 5's toolbar segmented controls.
 
 ![](preview.png)
 
+RPBorderlessSegmentedControl is based on [Ole Zorn's Stack Overflow response](http://stackoverflow.com/a/7138497/1082395) with some additional changes and updates.
+
 ## Usage
 
 To run the example project; clone the repo, and run `pod install` from the Project directory first.
@@ -22,9 +24,15 @@ it simply add the following line to your Podfile:
 
     pod "RPBorderlessSegmentedControl"
 
-## Author
+## Contact
 
-Brandon Evans, brandon@brandonevans.ca
+[![Robots & Pencils Logo](http://f.cl.ly/items/2W3n1r2R0j2p2b3n3j3c/rnplogo.png)](http://www.robotsandpencils.com)
+
+Follow Robots & Pencils on Twitter ([@robotsNpencils](https://twitter.com/robotsNpencils))
+
+### Maintainers
+
+- [Brandon Evans](http://github.com/interstateone) ([@interstateone](https://twitter.com/interstateone))
 
 ## License
 
