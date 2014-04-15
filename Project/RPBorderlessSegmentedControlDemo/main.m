@@ -1,6 +1,6 @@
 //
 //  main.m
-//  BMEBorderlessSegmentedControlDemo
+//  RPBorderlessSegmentedControlDemo
 //
 //  Created by Brandon on 2/10/2014.
 //  Copyright (c) 2014 Brandon Evans. All rights reserved.

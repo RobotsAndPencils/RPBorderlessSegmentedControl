@@ -1,1 +1,1 @@
-pod "BMEBorderlessSegmentedControl", :path => "../BMEBorderlessSegmentedControl.podspec"
+pod "RPBorderlessSegmentedControl", :path => "../RPBorderlessSegmentedControl.podspec"

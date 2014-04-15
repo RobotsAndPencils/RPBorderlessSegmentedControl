@@ -1,18 +1,18 @@
 //
-//  BMEBorderlessSegmentedControl.m
-//
+//  RPBorderlessSegmentedControl.m
+//  RPBorderlessSegmentedControlDemo
 //
 //  Created by Brandon Evans on 2/10/2014.
-//  Copyright (c) 2014 Brandon Evans. All rights reserved.
+//  Copyright (c) 2014 Robots and Pencils. All rights reserved.
 //
 
-#import "BMEBorderlessSegmentedControl.h"
-#import "BMEBorderlessSegmentedCell.h"
+#import "RPBorderlessSegmentedControl.h"
+#import "RPBorderlessSegmentedCell.h"
 
-@implementation BMEBorderlessSegmentedControl
+@implementation RPBorderlessSegmentedControl
 
 + (Class)cellClass {
-    return [BMEBorderlessSegmentedCell class];
+    return [RPBorderlessSegmentedCell class];
 }
 
 - (id)initWithFrame:(NSRect)frameRect {

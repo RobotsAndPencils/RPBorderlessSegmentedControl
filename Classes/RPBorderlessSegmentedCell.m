@@ -1,15 +1,15 @@
 //
-//  BMEBorderlessSegmentedCell.m
-//
+//  RPBorderlessSegmentedCell.m
+//  RPBorderlessSegmentedControlDemo
 //
 //  Created by Brandon Evans on 2/11/2014.
-//
+//  Copyright (c) 2014 Robots and Pencils. All rights reserved.
 //
 
-#import "BMEBorderlessSegmentedCell.h"
+#import "RPBorderlessSegmentedCell.h"
 #import "NSImage+DrawAsTemplate.h"
 
-@implementation BMEBorderlessSegmentedCell
+@implementation RPBorderlessSegmentedCell
 
 - (void)drawSegment:(NSInteger)segment inFrame:(NSRect)frame withView:(NSView *)controlView {
     CGFloat alpha;

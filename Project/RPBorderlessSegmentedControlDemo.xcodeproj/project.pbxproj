@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		9C48E5FC5EF2452490B4CE18 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C631C0720AE24D7F87FB47A0 /* libPods.a */; };
+		CA5EEF2618FDF54F00886FF1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2418FDF54F00886FF1 /* MainMenu.xib */; };
+		CA5EEF2B18FDF5B700886FF1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2718FDF5B700886FF1 /* Credits.rtf */; };
+		CA5EEF2C18FDF5B700886FF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2918FDF5B700886FF1 /* InfoPlist.strings */; };
+		CA5EEF2F18FDF5C200886FF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2D18FDF5C200886FF1 /* InfoPlist.strings */; };
 		CAB5B34E18A9CCB000F2BE1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB5B34D18A9CCB000F2BE1F /* Cocoa.framework */; };
-		CAB5B35818A9CCB000F2BE1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAB5B35618A9CCB000F2BE1F /* InfoPlist.strings */; };
 		CAB5B35A18A9CCB000F2BE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B35918A9CCB000F2BE1F /* main.m */; };
-		CAB5B35E18A9CCB000F2BE1F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CAB5B35C18A9CCB000F2BE1F /* Credits.rtf */; };
-		CAB5B36118A9CCB000F2BE1F /* BMEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B36018A9CCB000F2BE1F /* BMEAppDelegate.m */; };
-		CAB5B36418A9CCB000F2BE1F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB5B36218A9CCB000F2BE1F /* MainMenu.xib */; };
+		CAB5B36118A9CCB000F2BE1F /* RPAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B36018A9CCB000F2BE1F /* RPAppDelegate.h */; };
 		CAB5B36618A9CCB000F2BE1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB5B36518A9CCB000F2BE1F /* Images.xcassets */; };
 		CAB5B36D18A9CCB000F2BE1F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB5B36C18A9CCB000F2BE1F /* XCTest.framework */; };
 		CAB5B36E18A9CCB000F2BE1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB5B34D18A9CCB000F2BE1F /* Cocoa.framework */; };
-		CAB5B37618A9CCB000F2BE1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAB5B37418A9CCB000F2BE1F /* InfoPlist.strings */; };
-		CAB5B37818A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B37718A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.m */; };
+		CAB5B37818A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B37718A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,32 +27,31 @@
 			containerPortal = CAB5B34218A9CCB000F2BE1F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CAB5B34918A9CCB000F2BE1F;
-			remoteInfo = BMEBorderlessSegmentedControlDemo;
+			remoteInfo = RPBorderlessSegmentedControlDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		35278A40C7BE4E7A9BD51944 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C631C0720AE24D7F87FB47A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAB5B34A18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMEBorderlessSegmentedControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5EEF2518FDF54F00886FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CA5EEF2818FDF5B700886FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CA5EEF2A18FDF5B700886FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA5EEF2E18FDF5C200886FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAB5B34A18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPBorderlessSegmentedControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB5B34D18A9CCB000F2BE1F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CAB5B35018A9CCB000F2BE1F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CAB5B35118A9CCB000F2BE1F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CAB5B35218A9CCB000F2BE1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CAB5B35518A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BMEBorderlessSegmentedControlDemo-Info.plist"; sourceTree = "<group>"; };
-		CAB5B35718A9CCB000F2BE1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAB5B35518A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPBorderlessSegmentedControlDemo-Info.plist"; sourceTree = "<group>"; };
 		CAB5B35918A9CCB000F2BE1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CAB5B35B18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMEBorderlessSegmentedControlDemo-Prefix.pch"; sourceTree = "<group>"; };
-		CAB5B35D18A9CCB000F2BE1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		CAB5B35F18A9CCB000F2BE1F /* BMEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMEAppDelegate.h; sourceTree = "<group>"; };
-		CAB5B36018A9CCB000F2BE1F /* BMEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMEAppDelegate.m; sourceTree = "<group>"; };
-		CAB5B36318A9CCB000F2BE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CAB5B35B18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPBorderlessSegmentedControlDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CAB5B35F18A9CCB000F2BE1F /* RPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPAppDelegate.m; sourceTree = "<group>"; };
+		CAB5B36018A9CCB000F2BE1F /* RPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPAppDelegate.h; sourceTree = "<group>"; };
 		CAB5B36518A9CCB000F2BE1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CAB5B36B18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMEBorderlessSegmentedControlDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB5B36B18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPBorderlessSegmentedControlDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB5B36C18A9CCB000F2BE1F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CAB5B37318A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BMEBorderlessSegmentedControlDemoTests-Info.plist"; sourceTree = "<group>"; };
-		CAB5B37518A9CCB000F2BE1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CAB5B37718A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMEBorderlessSegmentedControlDemoTests.m; sourceTree = "<group>"; };
+		CAB5B37718A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPBorderlessSegmentedControlDemoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +79,8 @@
 		CAB5B34118A9CCB000F2BE1F = {
 			isa = PBXGroup;
 			children = (
-				CAB5B35318A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo */,
-				CAB5B37118A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests */,
+				CAB5B35318A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo */,
+				CAB5B37118A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests */,
 				CAB5B34C18A9CCB000F2BE1F /* Frameworks */,
 				CAB5B34B18A9CCB000F2BE1F /* Products */,
 				35278A40C7BE4E7A9BD51944 /* Pods.xcconfig */,
@@ -91,8 +90,8 @@
 		CAB5B34B18A9CCB000F2BE1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5B34A18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo.app */,
-				CAB5B36B18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.xctest */,
+				CAB5B34A18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo.app */,
+				CAB5B36B18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,44 +117,43 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		CAB5B35318A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo */ = {
+		CAB5B35318A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5B35F18A9CCB000F2BE1F /* BMEAppDelegate.h */,
-				CAB5B36018A9CCB000F2BE1F /* BMEAppDelegate.m */,
-				CAB5B36218A9CCB000F2BE1F /* MainMenu.xib */,
+				CAB5B35F18A9CCB000F2BE1F /* RPAppDelegate.m */,
+				CAB5B36018A9CCB000F2BE1F /* RPAppDelegate.h */,
+				CA5EEF2418FDF54F00886FF1 /* MainMenu.xib */,
 				CAB5B36518A9CCB000F2BE1F /* Images.xcassets */,
 				CAB5B35418A9CCB000F2BE1F /* Supporting Files */,
 			);
-			path = BMEBorderlessSegmentedControlDemo;
+			path = RPBorderlessSegmentedControlDemo;
 			sourceTree = "<group>";
 		};
 		CAB5B35418A9CCB000F2BE1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5B35518A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo-Info.plist */,
-				CAB5B35618A9CCB000F2BE1F /* InfoPlist.strings */,
+				CAB5B35518A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo-Info.plist */,
 				CAB5B35918A9CCB000F2BE1F /* main.m */,
-				CAB5B35B18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo-Prefix.pch */,
-				CAB5B35C18A9CCB000F2BE1F /* Credits.rtf */,
+				CA5EEF2718FDF5B700886FF1 /* Credits.rtf */,
+				CA5EEF2918FDF5B700886FF1 /* InfoPlist.strings */,
+				CAB5B35B18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CAB5B37118A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests */ = {
+		CAB5B37118A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5B37718A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.m */,
+				CAB5B37718A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.m */,
 				CAB5B37218A9CCB000F2BE1F /* Supporting Files */,
 			);
-			path = BMEBorderlessSegmentedControlDemoTests;
+			path = RPBorderlessSegmentedControlDemoTests;
 			sourceTree = "<group>";
 		};
 		CAB5B37218A9CCB000F2BE1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5B37318A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests-Info.plist */,
-				CAB5B37418A9CCB000F2BE1F /* InfoPlist.strings */,
+				CA5EEF2D18FDF5C200886FF1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -163,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CAB5B34918A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo */ = {
+		CAB5B34918A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAB5B37B18A9CCB000F2BE1F /* Build configuration list for PBXNativeTarget "BMEBorderlessSegmentedControlDemo" */;
+			buildConfigurationList = CAB5B37B18A9CCB000F2BE1F /* Build configuration list for PBXNativeTarget "RPBorderlessSegmentedControlDemo" */;
 			buildPhases = (
 				BBA03047B8B84F52AFCD6788 /* Check Pods Manifest.lock */,
 				CAB5B34618A9CCB000F2BE1F /* Sources */,
@@ -177,14 +175,14 @@
 			);
 			dependencies = (
 			);
-			name = BMEBorderlessSegmentedControlDemo;
-			productName = BMEBorderlessSegmentedControlDemo;
-			productReference = CAB5B34A18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo.app */;
+			name = RPBorderlessSegmentedControlDemo;
+			productName = RPBorderlessSegmentedControlDemo;
+			productReference = CAB5B34A18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CAB5B36A18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests */ = {
+		CAB5B36A18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAB5B37E18A9CCB000F2BE1F /* Build configuration list for PBXNativeTarget "BMEBorderlessSegmentedControlDemoTests" */;
+			buildConfigurationList = CAB5B37E18A9CCB000F2BE1F /* Build configuration list for PBXNativeTarget "RPBorderlessSegmentedControlDemoTests" */;
 			buildPhases = (
 				CAB5B36718A9CCB000F2BE1F /* Sources */,
 				CAB5B36818A9CCB000F2BE1F /* Frameworks */,
@@ -195,9 +193,9 @@
 			dependencies = (
 				CAB5B37018A9CCB000F2BE1F /* PBXTargetDependency */,
 			);
-			name = BMEBorderlessSegmentedControlDemoTests;
-			productName = BMEBorderlessSegmentedControlDemoTests;
-			productReference = CAB5B36B18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.xctest */;
+			name = RPBorderlessSegmentedControlDemoTests;
+			productName = RPBorderlessSegmentedControlDemoTests;
+			productReference = CAB5B36B18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +204,7 @@
 		CAB5B34218A9CCB000F2BE1F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = BME;
+				CLASSPREFIX = RP;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Brandon Evans";
 				TargetAttributes = {
@@ -215,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CAB5B34518A9CCB000F2BE1F /* Build configuration list for PBXProject "BMEBorderlessSegmentedControlDemo" */;
+			buildConfigurationList = CAB5B34518A9CCB000F2BE1F /* Build configuration list for PBXProject "RPBorderlessSegmentedControlDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -228,8 +226,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CAB5B34918A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo */,
-				CAB5B36A18A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests */,
+				CAB5B34918A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo */,
+				CAB5B36A18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,10 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB5B35818A9CCB000F2BE1F /* InfoPlist.strings in Resources */,
 				CAB5B36618A9CCB000F2BE1F /* Images.xcassets in Resources */,
-				CAB5B35E18A9CCB000F2BE1F /* Credits.rtf in Resources */,
-				CAB5B36418A9CCB000F2BE1F /* MainMenu.xib in Resources */,
+				CA5EEF2C18FDF5B700886FF1 /* InfoPlist.strings in Resources */,
+				CA5EEF2B18FDF5B700886FF1 /* Credits.rtf in Resources */,
+				CA5EEF2618FDF54F00886FF1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB5B37618A9CCB000F2BE1F /* InfoPlist.strings in Resources */,
+				CA5EEF2F18FDF5C200886FF1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB5B35A18A9CCB000F2BE1F /* main.m in Sources */,
-				CAB5B36118A9CCB000F2BE1F /* BMEAppDelegate.m in Sources */,
+				CAB5B36118A9CCB000F2BE1F /* RPAppDelegate.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB5B37818A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemoTests.m in Sources */,
+				CAB5B37818A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,40 +310,40 @@
 /* Begin PBXTargetDependency section */
 		CAB5B37018A9CCB000F2BE1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CAB5B34918A9CCB000F2BE1F /* BMEBorderlessSegmentedControlDemo */;
+			target = CAB5B34918A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo */;
 			targetProxy = CAB5B36F18A9CCB000F2BE1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAB5B35618A9CCB000F2BE1F /* InfoPlist.strings */ = {
+		CA5EEF2418FDF54F00886FF1 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CAB5B35718A9CCB000F2BE1F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CAB5B35C18A9CCB000F2BE1F /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAB5B35D18A9CCB000F2BE1F /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		CAB5B36218A9CCB000F2BE1F /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAB5B36318A9CCB000F2BE1F /* Base */,
+				CA5EEF2518FDF54F00886FF1 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		CAB5B37418A9CCB000F2BE1F /* InfoPlist.strings */ = {
+		CA5EEF2718FDF5B700886FF1 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CAB5B37518A9CCB000F2BE1F /* en */,
+				CA5EEF2818FDF5B700886FF1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CA5EEF2918FDF5B700886FF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA5EEF2A18FDF5B700886FF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA5EEF2D18FDF5C200886FF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA5EEF2E18FDF5C200886FF1 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -430,9 +428,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BMEBorderlessSegmentedControlDemo/BMEBorderlessSegmentedControlDemo-Prefix.pch";
-				INFOPLIST_FILE = "BMEBorderlessSegmentedControlDemo/BMEBorderlessSegmentedControlDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "RPBorderlessSegmentedControlDemo/RPBorderlessSegmentedControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "RPBorderlessSegmentedControlDemo/RPBorderlessSegmentedControlDemo-Info.plist";
+				PRODUCT_NAME = RPBorderlessSegmentedControlDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -444,9 +442,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BMEBorderlessSegmentedControlDemo/BMEBorderlessSegmentedControlDemo-Prefix.pch";
-				INFOPLIST_FILE = "BMEBorderlessSegmentedControlDemo/BMEBorderlessSegmentedControlDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "RPBorderlessSegmentedControlDemo/RPBorderlessSegmentedControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "RPBorderlessSegmentedControlDemo/RPBorderlessSegmentedControlDemo-Info.plist";
+				PRODUCT_NAME = RPBorderlessSegmentedControlDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -454,20 +452,20 @@
 		CAB5B37F18A9CCB000F2BE1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BMEBorderlessSegmentedControlDemo.app/Contents/MacOS/BMEBorderlessSegmentedControlDemo";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPBorderlessSegmentedControlDemo.app/Contents/MacOS/RPBorderlessSegmentedControlDemo";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BMEBorderlessSegmentedControlDemo/BMEBorderlessSegmentedControlDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "RPBorderlessSegmentedControlDemo/RPBorderlessSegmentedControlDemo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BMEBorderlessSegmentedControlDemoTests/BMEBorderlessSegmentedControlDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "RPBorderlessSegmentedControlDemoTests/RPBorderlessSegmentedControlDemoTests-Info.plist";
+				PRODUCT_NAME = RPBorderlessSegmentedControlDemoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -476,16 +474,16 @@
 		CAB5B38018A9CCB000F2BE1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BMEBorderlessSegmentedControlDemo.app/Contents/MacOS/BMEBorderlessSegmentedControlDemo";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPBorderlessSegmentedControlDemo.app/Contents/MacOS/RPBorderlessSegmentedControlDemo";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BMEBorderlessSegmentedControlDemo/BMEBorderlessSegmentedControlDemo-Prefix.pch";
-				INFOPLIST_FILE = "BMEBorderlessSegmentedControlDemoTests/BMEBorderlessSegmentedControlDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "RPBorderlessSegmentedControlDemo/RPBorderlessSegmentedControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "RPBorderlessSegmentedControlDemoTests/RPBorderlessSegmentedControlDemoTests-Info.plist";
+				PRODUCT_NAME = RPBorderlessSegmentedControlDemoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -494,7 +492,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CAB5B34518A9CCB000F2BE1F /* Build configuration list for PBXProject "BMEBorderlessSegmentedControlDemo" */ = {
+		CAB5B34518A9CCB000F2BE1F /* Build configuration list for PBXProject "RPBorderlessSegmentedControlDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAB5B37918A9CCB000F2BE1F /* Debug */,
@@ -503,7 +501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAB5B37B18A9CCB000F2BE1F /* Build configuration list for PBXNativeTarget "BMEBorderlessSegmentedControlDemo" */ = {
+		CAB5B37B18A9CCB000F2BE1F /* Build configuration list for PBXNativeTarget "RPBorderlessSegmentedControlDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAB5B37C18A9CCB000F2BE1F /* Debug */,
@@ -512,7 +510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAB5B37E18A9CCB000F2BE1F /* Build configuration list for PBXNativeTarget "BMEBorderlessSegmentedControlDemoTests" */ = {
+		CAB5B37E18A9CCB000F2BE1F /* Build configuration list for PBXNativeTarget "RPBorderlessSegmentedControlDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAB5B37F18A9CCB000F2BE1F /* Debug */,

@@ -1,6 +1,6 @@
 //
-//  BMEBorderlessSegmentedControlDemoTests.m
-//  BMEBorderlessSegmentedControlDemoTests
+//  RPBorderlessSegmentedControlDemoTests.m
+//  RPBorderlessSegmentedControlDemoTests
 //
 //  Created by Brandon on 2/10/2014.
 //  Copyright (c) 2014 Brandon Evans. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface BMEBorderlessSegmentedControlDemoTests : XCTestCase
+@interface RPBorderlessSegmentedControlDemoTests : XCTestCase
 
 @end
 
-@implementation BMEBorderlessSegmentedControlDemoTests
+@implementation RPBorderlessSegmentedControlDemoTests
 
 - (void)setUp
 {

@@ -1,7 +1,7 @@
-# BMEBorderlessSegmentedControl
+# RPBorderlessSegmentedControl
 
-[![Version](http://cocoapod-badges.herokuapp.com/v/BMEBorderlessSegmentedControl/badge.png)](http://cocoadocs.org/docsets/BMEBorderlessSegmentedControl)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/BMEBorderlessSegmentedControl/badge.png)](http://cocoadocs.org/docsets/BMEBorderlessSegmentedControl)
+[![Version](http://cocoapod-badges.herokuapp.com/v/RPBorderlessSegmentedControl/badge.png)](http://cocoadocs.org/docsets/RPBorderlessSegmentedControl)
+[![Platform](http://cocoapod-badges.herokuapp.com/p/RPBorderlessSegmentedControl/badge.png)](http://cocoadocs.org/docsets/RPBorderlessSegmentedControl)
 
 A replica of Xcode 5's toolbar segmented controls.
 
@@ -17,10 +17,10 @@ To run the example project; clone the repo, and run `pod install` from the Proje
 
 ## Installation
 
-BMEBorderlessSegmentedControl is available through [CocoaPods](http://cocoapods.org), to install
+RPBorderlessSegmentedControl is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
-    pod "BMEBorderlessSegmentedControl"
+    pod "RPBorderlessSegmentedControl"
 
 ## Author
 
@@ -28,5 +28,5 @@ Brandon Evans, brandon@brandonevans.ca
 
 ## License
 
-BMEBorderlessSegmentedControl is available under the MIT license. See the LICENSE file for more info.
+RPBorderlessSegmentedControl is available under the MIT license. See the LICENSE file for more info.
 
