@@ -24,16 +24,16 @@
     NSImage *image = [self imageForSegment:segment];
     if (image) {
         [[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
-        [self drawCenteredImage:image inFrame:frame alpha:alpha selected:[self isSelectedForSegment:segment]];
+        [self drawCenteredImage:image inFrame:frame alpha:alpha selected:[self isSelectedForSegment:segment] enabled:[(NSControl *)controlView isEnabled]];
     }
 }
 
-- (void)drawCenteredImage:(NSImage*)image inFrame:(NSRect)frame alpha:(CGFloat)alpha selected:(BOOL)selected {
+- (void)drawCenteredImage:(NSImage*)image inFrame:(NSRect)frame alpha:(CGFloat)alpha selected:(BOOL)selected enabled:(BOOL)enabled {
     CGSize imageSize = [image size];
     CGFloat x = frame.origin.x + (frame.size.width - imageSize.width) / 2.0;
     CGFloat y = frame.origin.y + (frame.size.height - imageSize.height) / 2.0;
     CGRect rect = CGRectIntegral(NSMakeRect(x, y + 1, imageSize.width, imageSize.height));
-    [image drawAsTemplateInRect:rect highlighted:selected];
+    [image drawAsTemplateInRect:rect inView:self.controlView highlighted:selected enabled:enabled];
 }
 
 @end

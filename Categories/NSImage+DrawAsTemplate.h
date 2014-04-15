@@ -10,6 +10,6 @@
 
 @interface NSImage (DrawAsTemplate)
 
-- (void)drawAsTemplateInRect:(NSRect)rect highlighted:(BOOL)highlighted;
+- (void)drawAsTemplateInRect:(NSRect)rect inView:(NSView *)view highlighted:(BOOL)highlighted enabled:(BOOL)enabled;
 
 @end

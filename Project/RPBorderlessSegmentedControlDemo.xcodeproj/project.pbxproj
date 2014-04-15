@@ -14,7 +14,6 @@
 		CA5EEF2F18FDF5C200886FF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2D18FDF5C200886FF1 /* InfoPlist.strings */; };
 		CAB5B34E18A9CCB000F2BE1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB5B34D18A9CCB000F2BE1F /* Cocoa.framework */; };
 		CAB5B35A18A9CCB000F2BE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B35918A9CCB000F2BE1F /* main.m */; };
-		CAB5B36118A9CCB000F2BE1F /* RPAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B36018A9CCB000F2BE1F /* RPAppDelegate.h */; };
 		CAB5B36618A9CCB000F2BE1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB5B36518A9CCB000F2BE1F /* Images.xcassets */; };
 		CAB5B36D18A9CCB000F2BE1F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB5B36C18A9CCB000F2BE1F /* XCTest.framework */; };
 		CAB5B36E18A9CCB000F2BE1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB5B34D18A9CCB000F2BE1F /* Cocoa.framework */; };
@@ -293,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB5B35A18A9CCB000F2BE1F /* main.m in Sources */,
-				CAB5B36118A9CCB000F2BE1F /* RPAppDelegate.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
