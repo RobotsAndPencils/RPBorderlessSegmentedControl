@@ -27,18 +27,18 @@
         CGContextScaleCTM(context, 1.0f, -1.0f);
     }
 
-    //Create mask image:
+    // Create mask image
     NSRect maskRect = rect;
     CGImageRef maskImage = [self CGImageForProposedRect:&maskRect context:graphicsContext hints:nil];
     
-    //Draw image and white drop shadow:
+    // Draw image and white drop shadow
     CGContextSetShadowWithColor(context, CGSizeMake(0, dropShadowOffsetY), 0, CGColorGetConstantColor(kCGColorWhite));
     [self drawInRect:maskRect fromRect:NSMakeRect(0, 0, self.size.width, self.size.height) operation:NSCompositeSourceOver fraction:0.5];
 
-    //Clip drawing to mask:
+    // Clip drawing to mask
     CGContextClipToMask(context, NSRectToCGRect(maskRect), maskImage);
 
-    //Draw gradient:
+    // Draw gradient
     NSColor *startColor;
     NSColor *endColor;
     if (highlighted) {
@@ -56,7 +56,7 @@
     NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:startColor endingColor:endColor];
     [gradient drawInRect:maskRect angle:90.0];
 
-    //Draw inner shadow with inverted mask:
+    // Draw inner shadow with inverted mask
     CGContextSetShadowWithColor(context, CGSizeMake(0, -1), innerShadowBlurRadius, [[NSColor colorWithCalibratedWhite:0.1 alpha:0.75] CGColor]);
     CGRect cgRect = CGRectMake( 0, 0, maskRect.size.width * scale, maskRect.size.height * scale);
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
