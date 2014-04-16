@@ -1,5 +1,6 @@
 # RPBorderlessSegmentedControl
 
+[![Build Status](https://travis-ci.org/RobotsAndPencils/RPBorderlessSegmentedControl.png)](https://travis-ci.org/RobotsAndPencils/RPBorderlessSegmentedControl)
 [![Version](http://cocoapod-badges.herokuapp.com/v/RPBorderlessSegmentedControl/badge.png)](http://cocoadocs.org/docsets/RPBorderlessSegmentedControl)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/RPBorderlessSegmentedControl/badge.png)](http://cocoadocs.org/docsets/RPBorderlessSegmentedControl)
 
