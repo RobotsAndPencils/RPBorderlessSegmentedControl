@@ -1,5 +1,5 @@
 PODS:
-  - RPBorderlessSegmentedControl (0.1.0)
+  - RPBorderlessSegmentedControl (1.0.0)
 
 DEPENDENCIES:
   - RPBorderlessSegmentedControl (from `../RPBorderlessSegmentedControl.podspec`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../RPBorderlessSegmentedControl.podspec
 
 SPEC CHECKSUMS:
-  RPBorderlessSegmentedControl: c1d123908db5352052d757edc2c7beea2a42751a
+  RPBorderlessSegmentedControl: 9610eaae1b148b5bc91b2d588eb9811a764b1f52
 
-COCOAPODS: 0.31.1
+COCOAPODS: 0.32.1
