@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -670,28 +670,10 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="356" height="193"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="356" height="193"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4bY-YF-mU7">
-                        <rect key="frame" x="106" y="88" width="144" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="140" id="N2O-fH-gIM"/>
-                        </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="Icons by GLYPHICONS" id="JcO-tT-88R">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                </subviews>
-                <constraints>
-                    <constraint firstAttribute="centerY" secondItem="4bY-YF-mU7" secondAttribute="centerY" id="7Pg-Jr-VIB"/>
-                    <constraint firstAttribute="centerX" secondItem="4bY-YF-mU7" secondAttribute="centerX" id="ws0-ke-c6g"/>
-                </constraints>
             </view>
             <toolbar key="toolbar" implicitIdentifier="6D1110B4-CDCB-4575-8808-B5D22BF4C0E6" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="9jz-Hw-aFP">
                 <allowedToolbarItems>
@@ -705,13 +687,13 @@
                             <segmentedCell key="cell" focusRingType="none" alignment="left" style="rounded" trackingMode="selectOne" id="Hrz-LW-uCu">
                                 <font key="font" metaFont="system"/>
                                 <segments>
-                                    <segment image="alignLeftTemplate" width="58">
+                                    <segment image="Refresh" width="58">
                                         <nil key="label"/>
                                     </segment>
-                                    <segment image="alignCenterTemplate" width="58" selected="YES" tag="1">
+                                    <segment image="Alignment" width="58" selected="YES" tag="1">
                                         <nil key="label"/>
                                     </segment>
-                                    <segment image="alignRightTemplate" width="57">
+                                    <segment image="SettingsButtonTemplate" width="57">
                                         <nil key="label"/>
                                     </segment>
                                 </segments>
@@ -729,8 +711,8 @@
         </window>
     </objects>
     <resources>
-        <image name="alignCenterTemplate" width="24" height="23"/>
-        <image name="alignLeftTemplate" width="24" height="23"/>
-        <image name="alignRightTemplate" width="24" height="23"/>
+        <image name="Alignment" width="24" height="24"/>
+        <image name="Refresh" width="24" height="24"/>
+        <image name="SettingsButtonTemplate" width="24" height="24"/>
     </resources>
 </document>
