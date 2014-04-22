@@ -4,5 +4,4 @@ before_install:
 before_script:
   - export LANG=en_US.UTF-8
   - cd Demo ; pod install ; cd ..
-xcode_workspace: Demo/RPBorderlessSegmentedControlDemo.xcworkspace
-xcode_scheme: RPBorderlessSegmentedControlDemo
+script: xctool -workspace Demo/RPBorderlessSegmentedControlDemo.xcworkspace -scheme RPBorderlessSegmentedControlDemo build
