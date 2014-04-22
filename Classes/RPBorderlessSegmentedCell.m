@@ -29,10 +29,21 @@
 }
 
 - (void)drawCenteredImage:(NSImage*)image inFrame:(NSRect)frame alpha:(CGFloat)alpha selected:(BOOL)selected enabled:(BOOL)enabled {
-    CGSize imageSize = [image size];
-    CGFloat x = frame.origin.x + (frame.size.width - imageSize.width) / 2.0;
-    CGFloat y = frame.origin.y + (frame.size.height - imageSize.height) / 2.0;
-    CGRect rect = CGRectIntegral(NSMakeRect(x, y + 1, imageSize.width, imageSize.height));
+    double sourceRatio = image.size.width / image.size.height;
+    double targetRatio = NSWidth(frame) / NSHeight(frame);
+    
+    NSSize finalSize;
+    if (sourceRatio > targetRatio) {
+        finalSize = NSMakeSize(NSWidth(frame), NSWidth(frame) / sourceRatio);
+    }
+    else {
+        finalSize = NSMakeSize(NSHeight(frame) * sourceRatio, NSHeight(frame));
+    }
+    
+    CGFloat x = frame.origin.x + (frame.size.width - finalSize.width) / 2.0;
+    CGFloat y = frame.origin.y + (frame.size.height - finalSize.height) / 2.0;
+    
+    CGRect rect = CGRectIntegral(NSMakeRect(x, y + 1, finalSize.width, finalSize.height));
     [image drawAsTemplateInRect:rect inView:self.controlView highlighted:selected enabled:enabled];
 }
 

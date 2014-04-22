@@ -60,7 +60,7 @@
     CGContextSetShadowWithColor(context, CGSizeMake(0, -1), innerShadowBlurRadius, [[NSColor colorWithCalibratedWhite:0.1 alpha:0.75] CGColor]);
     CGRect cgRect = CGRectMake( 0, 0, maskRect.size.width * scale, maskRect.size.height * scale);
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    CGContextRef maskContext = CGBitmapContextCreate(NULL, CGImageGetWidth(maskImage), CGImageGetHeight(maskImage), 8, 0, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
+    CGContextRef maskContext = CGBitmapContextCreate(NULL, deviceRect.size.width, deviceRect.size.height, 8, 0, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
     CGColorSpaceRelease(colorSpace);
     CGContextSetBlendMode(maskContext, kCGBlendModeXOR);
     CGContextDrawImage(maskContext, cgRect, maskImage);

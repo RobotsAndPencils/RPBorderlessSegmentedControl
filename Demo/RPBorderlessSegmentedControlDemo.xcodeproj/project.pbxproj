@@ -12,6 +12,7 @@
 		CA5EEF2B18FDF5B700886FF1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2718FDF5B700886FF1 /* Credits.rtf */; };
 		CA5EEF2C18FDF5B700886FF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2918FDF5B700886FF1 /* InfoPlist.strings */; };
 		CA5EEF2F18FDF5C200886FF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2D18FDF5C200886FF1 /* InfoPlist.strings */; };
+		CAAA35EF190572A00038B693 /* SettingsButtonTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CAAA35EE190572A00038B693 /* SettingsButtonTemplate.pdf */; };
 		CAB5B34E18A9CCB000F2BE1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB5B34D18A9CCB000F2BE1F /* Cocoa.framework */; };
 		CAB5B35A18A9CCB000F2BE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB5B35918A9CCB000F2BE1F /* main.m */; };
 		CAB5B36618A9CCB000F2BE1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB5B36518A9CCB000F2BE1F /* Images.xcassets */; };
@@ -37,6 +38,7 @@
 		CA5EEF2818FDF5B700886FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		CA5EEF2A18FDF5B700886FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA5EEF2E18FDF5C200886FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAAA35EE190572A00038B693 /* SettingsButtonTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SettingsButtonTemplate.pdf; sourceTree = "<group>"; };
 		CAB5B34A18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPBorderlessSegmentedControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB5B34D18A9CCB000F2BE1F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CAB5B35018A9CCB000F2BE1F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -123,6 +125,7 @@
 				CAB5B36018A9CCB000F2BE1F /* RPAppDelegate.h */,
 				CA5EEF2418FDF54F00886FF1 /* MainMenu.xib */,
 				CAB5B36518A9CCB000F2BE1F /* Images.xcassets */,
+				CAAA35EE190572A00038B693 /* SettingsButtonTemplate.pdf */,
 				CAB5B35418A9CCB000F2BE1F /* Supporting Files */,
 			);
 			path = RPBorderlessSegmentedControlDemo;
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAAA35EF190572A00038B693 /* SettingsButtonTemplate.pdf in Resources */,
 				CAB5B36618A9CCB000F2BE1F /* Images.xcassets in Resources */,
 				CA5EEF2C18FDF5B700886FF1 /* InfoPlist.strings in Resources */,
 				CA5EEF2B18FDF5B700886FF1 /* Credits.rtf in Resources */,
