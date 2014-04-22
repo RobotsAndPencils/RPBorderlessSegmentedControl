@@ -6,7 +6,7 @@
 
 A replica of Xcode 5's toolbar segmented controls.
 
-![](preview.png)
+<img src="preview.png" width="470" height="287" />
 
 RPBorderlessSegmentedControl is based on [Ole Zorn's Stack Overflow response](http://stackoverflow.com/a/7138497/1082395) with some additional changes and updates.
 
