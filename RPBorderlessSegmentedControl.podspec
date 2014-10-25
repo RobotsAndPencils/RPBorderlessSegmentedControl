@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RPBorderlessSegmentedControl"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "A replica of Xcode 5's toolbar segmented controls"
   s.homepage         = "https://www.github.com/RobotsAndPencils/RPBorderlessSegmentedControl"
   s.screenshots      = "http://f.cl.ly/items/2H1e0k0F1X1B1I063P1W/preview.png"
