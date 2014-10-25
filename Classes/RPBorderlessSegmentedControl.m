@@ -44,15 +44,11 @@
     [self setWantsLayer:YES];
 }
 
+/**
+ *  The default implementation of -[NSControl drawRect:] will call -[self.cell drawWithFrame:inView] which draws the background and border and then calls into -[self drawInteriorWithFrame:inView:] for the contents. In this override we're just skipping the background and border drawing since all we want is the interior, or contents.
+ */
 - (void)drawRect:(NSRect)rect {
-    CGFloat segmentWidth = rect.size.width / [self segmentCount];
-    CGFloat segmentHeight = rect.size.height - 1;
-    NSRect segmentRect = NSMakeRect(0, 0, segmentWidth, segmentHeight);
-
-    for (NSInteger segmentIndex = 0; segmentIndex < [self segmentCount]; segmentIndex += 1) {
-        [(NSSegmentedCell *)self.cell drawSegment:segmentIndex inFrame:segmentRect withView:self];
-        segmentRect.origin.x += segmentWidth;
-    }
+    [self.cell drawInteriorWithFrame:rect inView:self];
 }
 
 @end
