@@ -15,14 +15,9 @@
     return [RPBorderlessSegmentedCell class];
 }
 
-- (id)initWithFrame:(NSRect)frameRect {
-    self = [super initWithFrame:frameRect];
-    if (self) {
-        [self setWantsLayer:YES];
-    }
-    return self;
-}
-
+/**
+ *  This override will replace the default cell class with the class returned by +[RPBorderlessSegmentedControl cellClass] defined above.
+ */
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	if (![aDecoder isKindOfClass:[NSKeyedUnarchiver class]]) {
 		return [super initWithCoder:aDecoder];
@@ -39,20 +34,11 @@
 	return self;
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    [self setWantsLayer:YES];
-}
-
+/**
+ *  The default implementation of -[NSControl drawRect:] will call -[self.cell drawWithFrame:inView] which draws the background and border and then calls into -[self drawInteriorWithFrame:inView:] for the contents. In this override we're just skipping the background and border drawing since all we want is the interior, or contents.
+ */
 - (void)drawRect:(NSRect)rect {
-    CGFloat segmentWidth = rect.size.width / [self segmentCount];
-    CGFloat segmentHeight = rect.size.height - 1;
-    NSRect segmentRect = NSMakeRect(0, 0, segmentWidth, segmentHeight);
-
-    for (NSInteger segmentIndex = 0; segmentIndex < [self segmentCount]; segmentIndex += 1) {
-        [(NSSegmentedCell *)self.cell drawSegment:segmentIndex inFrame:segmentRect withView:self];
-        segmentRect.origin.x += segmentWidth;
-    }
+    [self.cell drawInteriorWithFrame:rect inView:self];
 }
 
 @end

@@ -11,6 +11,8 @@
 
 @implementation RPBorderlessSegmentedCell
 
+#pragma mark - NSSegmentedCell
+
 - (void)drawSegment:(NSInteger)segment inFrame:(NSRect)frame withView:(NSView *)controlView {
     CGFloat alpha;
 
@@ -28,6 +30,17 @@
     }
 }
 
+#pragma mark - Private
+
+/**
+ *  Draws a template image scaled as aspect-fit and centered within a frame
+ *
+ *  @param image    The image to draw
+ *  @param frame    The frame to scale and center the image within
+ *  @param alpha    The opacity of the image, from 0 to 1
+ *  @param selected Whether the image should be drawn with a selected state (selected has blue fill)
+ *  @param enabled  Whether the image should be drawn with an enabled state (disabled has lowered opacity)
+ */
 - (void)drawCenteredImage:(NSImage*)image inFrame:(NSRect)frame alpha:(CGFloat)alpha selected:(BOOL)selected enabled:(BOOL)enabled {
     double sourceRatio = image.size.width / image.size.height;
     double targetRatio = NSWidth(frame) / NSHeight(frame);
@@ -44,7 +57,7 @@
     CGFloat y = frame.origin.y + (frame.size.height - finalSize.height) / 2.0;
     
     CGRect rect = CGRectIntegral(NSMakeRect(x, y + 1, finalSize.width, finalSize.height));
-    [image drawAsTemplateInRect:rect inView:self.controlView highlighted:selected enabled:enabled];
+    [image rp_drawAsTemplateInRect:rect inView:self.controlView highlighted:selected enabled:enabled];
 }
 
 @end

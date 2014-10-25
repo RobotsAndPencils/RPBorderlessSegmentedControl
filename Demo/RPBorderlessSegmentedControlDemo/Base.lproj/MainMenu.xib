@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -10,7 +11,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="RPAppDelegate">
             <connections>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
@@ -670,7 +671,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="356" height="193"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="356" height="193"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -684,16 +685,16 @@
                         <segmentedControl key="view" focusRingType="none" verticalHuggingPriority="750" id="mGz-7f-3U6" customClass="RPBorderlessSegmentedControl">
                             <rect key="frame" x="0.0" y="14" width="185" height="27"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <segmentedCell key="cell" focusRingType="none" alignment="left" style="rounded" trackingMode="selectOne" id="Hrz-LW-uCu">
+                            <segmentedCell key="cell" borderStyle="border" focusRingType="none" alignment="left" style="rounded" trackingMode="selectOne" id="Hrz-LW-uCu">
                                 <font key="font" metaFont="system"/>
                                 <segments>
-                                    <segment image="Refresh" width="58">
+                                    <segment toolTip="Target" image="Target" width="58">
                                         <nil key="label"/>
                                     </segment>
-                                    <segment image="Alignment" width="58" selected="YES" tag="1">
+                                    <segment toolTip="Outline" image="Outline" width="58" selected="YES" tag="1">
                                         <nil key="label"/>
                                     </segment>
-                                    <segment image="SettingsButtonTemplate" width="57">
+                                    <segment toolTip="Settings" image="SettingsButtonTemplate" width="57">
                                         <nil key="label"/>
                                     </segment>
                                 </segments>
@@ -711,8 +712,8 @@
         </window>
     </objects>
     <resources>
-        <image name="Alignment" width="24" height="24"/>
-        <image name="Refresh" width="24" height="24"/>
+        <image name="Outline" width="24" height="24"/>
         <image name="SettingsButtonTemplate" width="24" height="24"/>
+        <image name="Target" width="24" height="24"/>
     </resources>
 </document>
