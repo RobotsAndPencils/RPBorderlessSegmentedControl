@@ -1,0 +1,1 @@
+../../../../../Categories/NSImage+DrawAsTemplate.h

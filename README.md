@@ -12,7 +12,7 @@ RPBorderlessSegmentedControl is based on [Ole Zorn's Stack Overflow response](ht
 
 ## Usage
 
-To run the example project; clone the repo, and run `pod install` from the Project directory first.
+To run the example project: clone the repo and open the workspace file in Demo/
 
 ## Notes
 
