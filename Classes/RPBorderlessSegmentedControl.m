@@ -15,14 +15,6 @@
     return [RPBorderlessSegmentedCell class];
 }
 
-- (id)initWithFrame:(NSRect)frameRect {
-    self = [super initWithFrame:frameRect];
-    if (self) {
-        [self setWantsLayer:YES];
-    }
-    return self;
-}
-
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	if (![aDecoder isKindOfClass:[NSKeyedUnarchiver class]]) {
 		return [super initWithCoder:aDecoder];
@@ -37,11 +29,6 @@
 	[unarchiver setClass:oldClass forClassName:NSStringFromClass(oldClass)];
 
 	return self;
-}
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    [self setWantsLayer:YES];
 }
 
 /**
