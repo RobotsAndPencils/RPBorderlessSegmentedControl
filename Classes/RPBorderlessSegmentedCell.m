@@ -11,6 +11,8 @@
 
 @implementation RPBorderlessSegmentedCell
 
+#pragma mark - NSSegmentedCell
+
 - (void)drawSegment:(NSInteger)segment inFrame:(NSRect)frame withView:(NSView *)controlView {
     CGFloat alpha;
 
@@ -28,6 +30,8 @@
     }
 }
 
+#pragma mark - Private
+
 - (void)drawCenteredImage:(NSImage*)image inFrame:(NSRect)frame alpha:(CGFloat)alpha selected:(BOOL)selected enabled:(BOOL)enabled {
     double sourceRatio = image.size.width / image.size.height;
     double targetRatio = NSWidth(frame) / NSHeight(frame);
@@ -44,7 +48,7 @@
     CGFloat y = frame.origin.y + (frame.size.height - finalSize.height) / 2.0;
     
     CGRect rect = CGRectIntegral(NSMakeRect(x, y + 1, finalSize.width, finalSize.height));
-    [image drawAsTemplateInRect:rect inView:self.controlView highlighted:selected enabled:enabled];
+    [image rp_drawAsTemplateInRect:rect inView:self.controlView highlighted:selected enabled:enabled];
 }
 
 @end

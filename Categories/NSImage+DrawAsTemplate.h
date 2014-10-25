@@ -17,6 +17,6 @@
  *  @param highlighted whether the image should be drawn with a blue highlight
  *  @param enabled     whether the image should be drawn as if the control were enabled
  */
-- (void)drawAsTemplateInRect:(NSRect)rect inView:(NSView *)view highlighted:(BOOL)highlighted enabled:(BOOL)enabled;
+- (void)rp_drawAsTemplateInRect:(NSRect)rect inView:(NSView *)view highlighted:(BOOL)highlighted enabled:(BOOL)enabled;
 
 @end
