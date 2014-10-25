@@ -15,6 +15,9 @@
     return [RPBorderlessSegmentedCell class];
 }
 
+/**
+ *  This override will replace the default cell class with the class returned by +[RPBorderlessSegmentedControl cellClass] defined above.
+ */
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	if (![aDecoder isKindOfClass:[NSKeyedUnarchiver class]]) {
 		return [super initWithCoder:aDecoder];
